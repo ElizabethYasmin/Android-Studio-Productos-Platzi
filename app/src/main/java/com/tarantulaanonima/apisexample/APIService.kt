@@ -8,12 +8,6 @@ import retrofit2.http.Query
 import retrofit2.http.Url
 
 interface APIService {
-    //@GET
-    //suspend fun getDogsByBreeds(@Url url:String): Response<DogsResponse>//se coloca suspend por la coorutina
-
-
-    //suspend fun getProductosByName(@Url url:String): Response<ProductosResponse>
-
     @GET("products")
     suspend fun getProducts(
         @Query("title") title: String? = null,

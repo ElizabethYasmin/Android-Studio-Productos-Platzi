@@ -16,7 +16,6 @@ data class ProductosResponse(
     @SerializedName("images")
     val images: List<String>
 )
-
 data class Category(
     @SerializedName("id")
     val id: Int,
